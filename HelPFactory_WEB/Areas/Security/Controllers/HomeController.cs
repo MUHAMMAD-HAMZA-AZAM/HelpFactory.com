@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HelPFactory_WEB.Areas.Admin.Controllers
+namespace HelPFactory_WEB.Areas.Security.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Admin/Home
-        public ActionResult  Index()
+        // GET: Security/Home
+        public ActionResult Index()
         {
-           
-            return View();
+            return RedirectToAction("Login","login");
         }
     }
 }

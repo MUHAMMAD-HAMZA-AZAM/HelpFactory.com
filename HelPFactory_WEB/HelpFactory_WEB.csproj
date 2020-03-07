@@ -123,10 +123,24 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\Account_LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChangePasswordController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashBoardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ForgotPasswordController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PrivacyPolicyController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RegistrationController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TermsAndConditionsController.cs" />
+    <Compile Include="Areas\Security\Controllers\ForgetPasswordController.cs" />
+    <Compile Include="Areas\Security\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Security\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Security\Controllers\RegistrationController.cs" />
+    <Compile Include="Areas\Security\Controllers\ResetPasswordController.cs" />
+    <Compile Include="Areas\Security\SecurityAreaRegistration.cs" />
+    <Compile Include="Controllers\app_userController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -6615,6 +6629,22 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Security\Views\web.config" />
+    <Content Include="Areas\Security\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Security\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Security\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Security\Views\Login\login.cshtml" />
+    <Content Include="Areas\Security\Views\Login\logout.cshtml" />
+    <Content Include="Areas\Security\Views\Registration\registration.cshtml" />
+    <Content Include="Areas\Security\Views\ForgetPassword\forgetPassword.cshtml" />
+    <Content Include="Areas\Security\Views\ResetPassword\resetPassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\ContactUs.cshtml" />
+    <Content Include="Areas\Admin\Views\PrivacyPolicy\PrivacyPolicy.cshtml" />
+    <Content Include="Areas\Admin\Views\TermsAndConditions\TermsAndConditions.cshtml" />
+    <Content Include="Areas\Admin\Views\Account_Login\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Registration\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DashBoard\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ForgotPassword\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -6650,16 +6680,25 @@
     <Content Include="Views\Home\PrivacyPolicy.cshtml" />
     <Content Include="Views\Home\TermsAndConditions.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
+    <Content Include="Views\App_User\Index.cshtml" />
+    <Content Include="Views\App_User\Details.cshtml" />
+    <Content Include="Views\App_User\Create.cshtml" />
+    <Content Include="Views\App_User\Edit.cshtml" />
+    <Content Include="Views\App_User\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\ChangePassword\" />
+    <Folder Include="Areas\Admin\Views\Login\" />
+    <Folder Include="Areas\Security\Models\" />
     <Folder Include="assets\vendors\general\summernote\coverage\HeadlessChrome 0.0.0 %28Mac OS X 10.14.0%29\html\src\" />
     <Folder Include="assets\vendors\general\summernote\coverage\HeadlessChrome 0.0.0 %28Mac OS X 10.14.1%29\html\src\" />
     <Folder Include="assets\vendors\general\summernote\coverage\PhantomJS 2.1.1 %28Mac OS X 0.0.0%29\html\test\unit\" />
     <Folder Include="assets\vendors\general\summernote\coverage\PhantomJS 2.1.1 %28Mac OS X 0.0.0%29\lcov-report\src\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Error\" />
+    <Folder Include="Views\Repo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

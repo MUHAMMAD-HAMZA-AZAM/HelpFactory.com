@@ -7,13 +7,13 @@ namespace HelpFactory.DataBase.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class inti : IMigrationMetadata
+    public sealed partial class Relationships : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inti));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Relationships));
         
         string IMigrationMetadata.Id
         {
-            get { return "202002191037507_inti"; }
+            get { return "202003071022227_Relationships"; }
         }
         
         string IMigrationMetadata.Source
