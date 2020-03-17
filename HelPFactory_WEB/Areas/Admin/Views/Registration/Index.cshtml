@@ -1,18 +1,27 @@
-﻿
+﻿@model IEnumerable<HelpFactory_Entities.Registration_ViewModel>
+
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
 
-<!DOCTYPE html>
+<h2>Admin List </h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Admin Registration</title>
-</head>
-<body>
-    <div> 
-        <p> This Is Admin Registration Page </p>
-    </div>
-</body>
-</html>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

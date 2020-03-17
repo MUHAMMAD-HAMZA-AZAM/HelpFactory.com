@@ -13,7 +13,7 @@ namespace HelpFactory.DataBase.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202003071022227_Relationships"; }
+            get { return "202003111833176_Relationships"; }
         }
         
         string IMigrationMetadata.Source

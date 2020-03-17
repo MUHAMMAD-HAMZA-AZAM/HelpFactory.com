@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="App_User.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="Encrypt_Password.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Province.cs" />

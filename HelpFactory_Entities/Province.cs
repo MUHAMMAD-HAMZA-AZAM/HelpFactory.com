@@ -12,8 +12,7 @@ namespace HelpFactory_Entities
 
         [Key]
         public int ProvinceId { get; set; }
-
-        [Required(ErrorMessage = "Province Name is Required")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Province Name is requierd")]
         public string ProvinceName { get; set; }
         public string ProvinceCode { get; set; }  
         public virtual ICollection<City> cities { get; set; }

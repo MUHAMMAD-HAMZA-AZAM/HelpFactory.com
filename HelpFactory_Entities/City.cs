@@ -12,8 +12,7 @@ namespace HelpFactory_Entities
     {
         [Key]
         public int CityId { get; set; }
-
-        [Required(ErrorMessage = "City Name is Required")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "City Name is requierd")]
         public string CityName { get; set; }
 
         [DataType(DataType.PostalCode)]

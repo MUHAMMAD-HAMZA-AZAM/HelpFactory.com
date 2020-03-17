@@ -19,6 +19,7 @@ namespace HelPFactory_WEB
                  namespaces: new string[] { "HelPFactory_WEB.Controllers" }
 
             );
+           // (RouteTable.Routes[routes.Count - 1] as Route).DataTokens["area"] = "Security";
         }
     }
 }

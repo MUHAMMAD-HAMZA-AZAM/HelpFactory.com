@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HelpFactory_Context.cs" />
-    <Compile Include="Migrations\202003071022227_Relationships.cs" />
-    <Compile Include="Migrations\202003071022227_Relationships.designer.cs">
-      <DependentUpon>202003071022227_Relationships.cs</DependentUpon>
+    <Compile Include="Migrations\202003111833176_Relationships.cs" />
+    <Compile Include="Migrations\202003111833176_Relationships.designer.cs">
+      <DependentUpon>202003111833176_Relationships.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003071022227_Relationships.resx">
-      <DependentUpon>202003071022227_Relationships.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003111833176_Relationships.resx">
+      <DependentUpon>202003111833176_Relationships.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

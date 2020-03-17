@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace HelPFactory_WEB.Areas.Security.Controllers
 {
-    public class ResetPasswordController : Controller
+    public class ChangePasswordController : Controller
     {
         // GET: Security/ResetPassword
         public ActionResult resetPassword()

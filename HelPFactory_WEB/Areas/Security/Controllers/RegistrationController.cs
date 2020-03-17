@@ -9,7 +9,7 @@ namespace HelPFactory_WEB.Areas.Security.Controllers
     public class RegistrationController : Controller
     {
         // GET: Security/Registration
-        public ActionResult registration()
+        public ActionResult Index()
         {
 
             return View();

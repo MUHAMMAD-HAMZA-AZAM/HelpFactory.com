@@ -1,0 +1,8 @@
+ // email not verified o registration time  
+                    registration_ViewModel.MyUsers.EmailVerification = false;
+                    //it generate unique code     
+                    registration_ViewModel.MyUsers.ActivetionCode = Guid.NewGuid();
+                    //password convert  
+                    registration_ViewModel.MyUsers.Password = HelpFactory_Entities.Encrypt_Password.textToEncrypt(registration_ViewModel.MyUsers.Password);
+                    _repository.Insert(app_User);
+                    _repository.Save();
